@@ -33,7 +33,7 @@ Before starting the assignment, ensure you have the following software installed
 
 ### **1. Project Structure**
 
-Ensure your project directory follows the structure below:
+Ensure your project directory follows the structure below and you need to Write 4 differenty tasks of Spark SQL on dataframes from the dataset generated:
 
 ```
 SocialMediaSentimentAnalysis/
@@ -46,10 +46,10 @@ SocialMediaSentimentAnalysis/
 │   ├── sentiment_engagement.csv
 │   └── top_verified_users.csv
 ├── src/
-│   ├── task1_hashtag_trends.py
-│   ├── task2_engagement_by_age.py
-│   ├── task3_sentiment_vs_engagement.py
-│   └── task4_top_verified_users.py
+│   ├── task1s.py
+│   ├── task2.py
+│   ├── task3.py
+│   └── task4.py
 ├── docker-compose.yml
 └── README.md
 ```
@@ -58,7 +58,7 @@ SocialMediaSentimentAnalysis/
 
 - **input/**: Contains the input datasets (`posts.csv` and `users.csv`)  
 - **outputs/**: Directory where the results of each task will be saved.
-- **src/**: Contains the individual Python scripts for each task.
+- **src/**: Contains the individual 4 Python scripts for each task that you need to perform.
 - **docker-compose.yml**: Docker Compose configuration file to set up Spark.
 - **README.md**: Assignment instructions and guidelines.
 
@@ -76,10 +76,10 @@ You can run the analysis tasks either locally or using Docker.
 2. **Execute Each Task Using `spark-submit`**:
    ```bash
  
-     spark-submit src/task1_hashtag_trends.py
-     spark-submit src/task2_engagement_by_age.py
-     spark-submit src/task3_sentiment_vs_engagement.py
-     spark-submit src/task4_top_verified_users.py
+     spark-submit src/task1.py
+     spark-submit src/task2.py
+     spark-submit src/task3.py
+     spark-submit src/task4.py
      
    ```
 
@@ -109,10 +109,10 @@ You can run the analysis tasks either locally or using Docker.
 4. **Run Your PySpark Scripts Using `spark-submit`**:
    ```bash
    
-   spark-submit src/task1_hashtag_trends.py
-   spark-submit src/task2_engagement_by_age.py
-   spark-submit src/task3_sentiment_vs_engagement.py
-   spark-submit src/task4_top_verified_users.py
+   spark-submit src/task1.py
+   spark-submit src/task2.py
+   spark-submit src/task3.py
+   spark-submit src/task4.py
    ```
 
 5. **Exit the Container**:
